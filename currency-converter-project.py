@@ -34,7 +34,7 @@ class App(tk.Tk):
         self.intro_label = Label(self, text = 'Welcome to Real Time Currency Convertor',  fg = 'blue', relief = tk.RAISED, borderwidth = 3)
         self.intro_label.config(font = ('Courier',15,'bold'))
 
-        self.date_label = Label(self, text = f"1 Thai Baht = {self.currency_converter.convert('USD','THB',1)} USD \n Date : {self.currency_converter.data['date']}", relief = tk.GROOVE, borderwidth = 5)
+        self.date_label = Label(self, text = f"1 USD = {self.currency_converter.convert('USD','THB',1)} THB \n Date : {self.currency_converter.data['date']}", relief = tk.GROOVE, borderwidth = 5)
 
         self.intro_label.place(x = 10 , y = 5)
         self.date_label.place(x = 160, y= 50)
